@@ -7,19 +7,19 @@ JavaFX клиент для взаимодействия с REST-сервисом
 ## 📦 Структура проекта
 
 partner-client/
-├── .idea/                        # Конфигурационные файлы IntelliJ IDEA (не загружать в Git)
-├── .mvn/                         # Настройки Maven Wrapper
+├── .idea/                            # Конфигурационные файлы IntelliJ IDEA (не загружать в Git)
+├── .mvn/                             # Настройки Maven Wrapper
 │   └── wrapper/
 │       └── maven-wrapper.properties
-├── mvnw                          # Скрипт запуска Maven (Linux/Mac)
-├── mvnw.cmd                      # Скрипт запуска Maven (Windows)
-├── pom.xml                       # Главный файл конфигурации Maven (зависимости, плагины)
-├── README.md                     # Документация проекта
+├── mvnw                              # Скрипт запуска Maven (Linux/Mac)
+├── mvnw.cmd                          # Скрипт запуска Maven (Windows)
+├── pom.xml                           # Главный файл конфигурации Maven (зависимости, плагины)
+├── README.md                         # Документация проекта
 └── src/
     └── main/
         ├── java/
         │   └── com/example/partnerclient/
-        │       ├── controller/            # Контроллеры JavaFX
+        │       ├── controller/                # Контроллеры JavaFX
         │       │   ├── MainController.java        # Главная форма: список партнёров, действия
         │       │   ├── AddPartnerController.java  # Форма добавления партнёра
         │       │   └── EditPartnerController.java # Форма редактирования партнёра
