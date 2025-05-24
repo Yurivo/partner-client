@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<VBox xmlns="http://javafx.com/javafx"
+      xmlns:fx="http://javafx.com/fxml"
+      fx:controller="com.example.partnerclient.controller.PrintViewController"
+      spacing="10" style="-fx-padding: 10;">
+    <Label text="Предпросмотр списка партнёров"/>
+    <TableView fx:id="printTable" prefHeight="300">
+        <columns>
+            <TableColumn fx:id="nameColumn" text="Наименование" prefWidth="150"/>
+            <TableColumn fx:id="directorColumn" text="Руководитель" prefWidth="150"/>
+            <TableColumn fx:id="phoneColumn" text="Телефон" prefWidth="100"/>
+        </columns>
+    </TableView>
+    <HBox spacing="10">
+        <Button text="Сохранить как PDF" onAction="#onSavePdf"/>
+        <Button text="Печать" onAction="#onPrint"/>
+    </HBox>
+</VBox>

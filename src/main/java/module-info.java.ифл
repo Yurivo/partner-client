@@ -1,0 +1,17 @@
+module com.example.partnerclient {
+    requires javafx.controls;
+    requires javafx.fxml;
+    requires java.desktop;
+
+    // Пакеты, которые должны быть доступны для FXML (reflection)
+    opens com.example.partnerclient to javafx.fxml;
+    opens com.example.partnerclient.model to javafx.fxml;
+    opens com.example.partnerclient.controller to javafx.fxml;
+    opens com.example.partnerclient.util to javafx.fxml;
+
+    // Пакеты, доступные как API
+    exports com.example.partnerclient;
+    exports com.example.partnerclient.model;
+    exports com.example.partnerclient.controller;
+    exports com.example.partnerclient.util;
+}

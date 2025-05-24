@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<BorderPane xmlns="http://javafx.com/javafx/23.0.1"
+            xmlns:fx="http://javafx.com/fxml/1"
+            fx:controller="com.example.partnerclient.controller.MainController">
+
+   <!-- Верхняя панель с кнопками и меню -->
+   <top>
+      <VBox>
+         <!-- Меню -->
+         <MenuBar>
+            <Menu text="Файл">
+               <MenuItem fx:id="exitMenuItem" text="Выход" onAction="#onExit"/>
+            </Menu>
+            <Menu text="Партнёр">
+               <MenuItem fx:id="addMenuItem" text="Добавить" onAction="#openAddForm"/>
+               <MenuItem fx:id="editMenuItem" text="Редактировать" onAction="#openEditForm"/>
+               <MenuItem fx:id="deleteMenuItem" text="Удалить" onAction="#onDelete"/>
+            </Menu>
+         </MenuBar>
+
+      </VBox>
+   </top>
+
+   <!-- Центральная часть: таблица и кнопки -->
+   <center>
+      <VBox spacing="10" style="-fx-padding: 10;">
+         <HBox spacing="5" alignment="CENTER_LEFT">
+            <Label text="Поиск:"/>
+            <TextField fx:id="searchField" promptText="Введите имя, руководителя или телефон"/>
+         </HBox>
+         <TableView fx:id="partnerTable">
+            <columns>
+               <TableColumn fx:id="nameColumn" text="Наименование"/>
+               <TableColumn fx:id="directorColumn" text="Руководитель"/>
+               <TableColumn fx:id="phoneColumn" text="Телефон"/>
+            </columns>
+         </TableView>
+
+         <HBox spacing="10">
+            <Button text="Добавить" onAction="#openAddForm"/>
+            <Button text="Редактировать" onAction="#openEditForm"/>
+            <Button text="Удалить" onAction="#onDelete"/>
+         </HBox>
+      </VBox>
+   </center>
+</BorderPane>

@@ -1,0 +1,14 @@
+.title-button {
+    -fx-background-color: transparent;
+    -fx-text-fill: white;
+    -fx-font-size: 14px;
+    -fx-cursor: hand;
+    -fx-padding: 2 8 2 8;
+}
+.title-button:hover {
+    -fx-background-color: #34495e;
+}
+
+.header-bar {
+    -fx-background-color: #2c3e50;
+}

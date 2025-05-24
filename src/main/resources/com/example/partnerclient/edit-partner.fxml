@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<AnchorPane xmlns="http://javafx.com/javafx/8"
+            xmlns:fx="http://javafx.com/fxml"
+            fx:controller="com.example.partnerclient.controller.EditPartnerController"
+            prefWidth="420" prefHeight="360">
+
+    <children>
+
+        <!-- Заголовок с кнопками управления окном -->
+        <HBox layoutX="0" layoutY="0" prefHeight="30.0"
+              style="-fx-background-color: #2c3e50;"
+              AnchorPane.leftAnchor="0" AnchorPane.rightAnchor="0">
+        </HBox>
+
+        <!-- Форма редактирования -->
+        <VBox layoutX="20" layoutY="50" spacing="10"
+              AnchorPane.leftAnchor="20" AnchorPane.rightAnchor="20" AnchorPane.topAnchor="40">
+            <children>
+                <TextField fx:id="nameField" promptText="Наименование"/>
+                <TextField fx:id="directorField" promptText="Руководитель"/>
+                <TextField fx:id="addressField" promptText="Юридический адрес"/>
+                <TextField fx:id="phoneField" promptText="Телефон"/>
+                <TextField fx:id="faxField" promptText="Факс"/>
+                <Button text="Сохранить изменения" onAction="#onUpdate" maxWidth="Infinity"/>
+            </children>
+        </VBox>
+
+    </children>
+</AnchorPane>
